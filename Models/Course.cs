@@ -1,3 +1,6 @@
+using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+
 namespace TestingPlatform.Models;
 
 public class Course
@@ -15,5 +18,7 @@ public class Course
    /// <summary>
    /// Список групп внутри курса
    /// </summary>
-   public List<Group> Groups { get; set; }
+   public List<Group> Groups { get; set; } = new();
+
+   public List<Test> Tests { get; set; } = new();
 }

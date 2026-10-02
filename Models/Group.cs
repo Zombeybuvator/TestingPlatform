@@ -30,5 +30,7 @@ public class Group
    /// <summary>
    /// Студенты, которые состоят в группе
    /// </summary>
-   public List<Student> Students { get; set; }
+   public List<Student> Students { get; set; } = new();
+
+   public List<Test> Tests {get; set;} = new();
 }

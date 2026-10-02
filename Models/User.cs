@@ -37,10 +37,7 @@ public class User
    /// Фамилия
    /// </summary>
    public string LastName { get; set; }
-  
-   /// <summary>
-   /// Роль (менеджер или студент)
-   /// </summary>
+
    public UserRole Role { get; set; }
   
    /// <summary>
@@ -54,4 +51,3 @@ public class User
    /// </summary>
    public Student? Student { get; set; }
 }
-

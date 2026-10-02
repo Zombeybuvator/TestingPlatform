@@ -15,6 +15,8 @@ public class Project
    /// <summary>
    /// Список групп внутри проекта
    /// </summary>
-   public List<Group> Groups { get; set; }
+   public List<Group> Groups { get; set; } = new();
+   
+   public List<Test> Tests { get; set; } = new();
 }
 
